@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import { Login } from "@/pages/Login/Login";
+
 export const LoggedOut = createBrowserRouter([
   {
     path: "/",
-    element: <div className="font-light">Hello world! teste</div>,
+    element: <Login />,
   },
 ]);

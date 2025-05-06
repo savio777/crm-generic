@@ -2,11 +2,19 @@
 @import "tailwindcss";
 
 @theme {
-  --primary: #152259;
-  --secondary: #509cdb;
-  --tertiary: #b9d7f1;
+  --color-primary: #152259;
+  --color-secondary: #509cdb;
+  --color-tertiary: #b9d7f1;
 }
 
 html {
   font-family: "Kumbh Sans", sans-serif;
+}
+
+input:focus-visible {
+  outline-color: #6a7282;
+}
+
+button {
+  cursor: pointer;
 }
