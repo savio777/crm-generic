@@ -1,15 +1,11 @@
 import { RouterProvider } from "react-router-dom";
 
-import { useSession } from "./store/useSession";
-import { LoggedIn } from "./routes/LoggedIn";
-import { LoggedOut } from "./routes/LoggedOut";
+import { Routes } from "./routes/Routes";
 
 function App() {
-  const { user } = useSession();
-
   return (
     <div className="w-full h-dvh bg-white">
-      <RouterProvider router={user ? LoggedIn : LoggedOut} />
+      <RouterProvider router={Routes} />
     </div>
   );
 }
