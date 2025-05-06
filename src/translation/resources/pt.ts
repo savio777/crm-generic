@@ -4,4 +4,7 @@ export default {
   login: "Login",
   email: "E-mail",
   password: "Senha",
+  Dashboard: {
+    title: "Painel de Usuários",
+  },
 };
